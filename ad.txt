@@ -1,18 +1,435 @@
 [Adblock Plus 2.0]
-! Title:我的个人广告过滤
+! Title:我的xa6个人广告过滤
 ! Description:自建ABP规则，Alook浏览器使用
 ! Version:2026082001
 ! Expires:1 days
 ! Homepage:https://github.com/outku/xa6-ad
-!========下面写你的广告拦截规则========
+!========下面为广告拦截规则========
 
-!示例：屏蔽某个网站全部广告
-||example.com^
+!屏蔽黑产CDNS控制访问次数后恶意跳转
+||js.h3cdns.com^
+||hm.baidu.com^
+!$script：仅拦截 JS 脚本；third-party：只拦截第三方网站嵌入的百度统计（不影响你自己本地打开百度主页）
+!||hm.baidu.com$script,third-party
 
-!示例：隐藏网页广告区块
-example.com##div.ad
+!屏蔽||js.szly123.com域名下的所有脚本加载
+!||js.szly123.com^$script
+!||js.szly123.com^
 
-!示例：放行网站（不拦截）
-@@||example.com/noad.js^
+! 2026年7月8日 https://x35.xn--hdcl2bk2m1bc.xn--gecrj9c
+! 2026年7月8日 https://x35.xn--hdcl2bk2m1bc.xn--gecrj9c:8443
+x35.xn--hdcl2bk2m1bc.xn--gecrj9c###gszl > table#table3
+||x35.xn--hdcl2bk2m1bc.xn--gecrj9c:8443/js/xztg.js$script,domain=x35.xn--hdcl2bk2m1bc.xn--gecrj9c
+||x35.xn--hdcl2bk2m1bc.xn--gecrj9c:8443/js/49dh.js$script,domain=x35.xn--hdcl2bk2m1bc.xn--gecrj9c
+||x35.xn--hdcl2bk2m1bc.xn--gecrj9c:8443/bbs/dbnm3x.js$script,domain=x35.xn--hdcl2bk2m1bc.xn--gecrj9c
+||62.www493310a.com:2053/images/dh.gif$image
+x35.xn--hdcl2bk2m1bc.xn--gecrj9c##[src="https://d31q194n7fpdes.cloudfront.net/mygai/tp/4949cp/ltgg.gif"]
+||d31q194n7fpdes.cloudfront.net/mygai/tp/4949cp/4949fan.gif$image
+##.down4949
+||d31q194n7fpdes.cloudfront.net/mygai/tp/4949cp/ltgg1.gif$image
+||x35.xn--hdcl2bk2m1bc.xn--gecrj9c:8443/bbs/db111223.js$script,domain=x35.xn--hdcl2bk2m1bc.xn--gecrj9c
+x35.xn--hdcl2bk2m1bc.xn--gecrj9c##.page > .pad.box > .down1555
+||d31q194n7fpdes.cloudfront.net/mygai/tp/49ylc/zzsm.gif$image
+||d31q194n7fpdes.cloudfront.net/mygai/tp/49ylc/4949gg.gif$image
+||d31q194n7fpdes.cloudfront.net/mygai/tp/49ylc/4949gg.gif$image
+||x35.xn--hdcl2bk2m1bc.xn--gecrj9c:8443/bbs/changlong.js$script,domain=x35.xn--hdcl2bk2m1bc.xn--gecrj9c
+||gg62.dh.xn--u9j6f5etbb5cc8mq5d.xn--q9jyb4c:8443/bbs/39176tt.js$script,domain=x35.xn--hdcl2bk2m1bc.xn--gecrj9c
+||x35.xn--hdcl2bk2m1bc.xn--gecrj9c:8443/js/dbtg37.js$script,domain=x35.xn--hdcl2bk2m1bc.xn--gecrj9c
+##.jjtz33
+x35.xn--hdcl2bk2m1bc.xn--gecrj9c##.yqlj
+||x35.xn--hdcl2bk2m1bc.xn--gecrj9c:8443/jsdc/chajiantui4.js$script,domain=x35.xn--hdcl2bk2m1bc.xn--gecrj9c
+||x35.xn--hdcl2bk2m1bc.xn--gecrj9c:8443/bbs/pgtg.js$script,domain=x35.xn--hdcl2bk2m1bc.xn--gecrj9c
+||x35.xn--hdcl2bk2m1bc.xn--gecrj9c:8443/js/tg3ztt.js$script,domain=x35.xn--hdcl2bk2m1bc.xn--gecrj9c
+x35.xn--hdcl2bk2m1bc.xn--gecrj9c##b > .xgam
+||d31q194n7fpdes.cloudfront.net/mygai/tp/49tk/49-2.gif$image
+||d31q194n7fpdes.cloudfront.net/mygai/tp/49tk/49-4.jpg$image
+x35.xn--hdcl2bk2m1bc.xn--gecrj9c##.jrtzao
+x35.xn--hdcl2bk2m1bc.xn--gecrj9c##.white-box > table#table3
+x35.xn--hdcl2bk2m1bc.xn--gecrj9c##.ymgg
+||x35.xn--hdcl2bk2m1bc.xn--gecrj9c:8443/jsdc/chajiantui4.js$script
+##.ymgg
 
-!感叹号开头是注释，不会生效
+! 2026年7月13日 https://zzwwhh49360.49360bu1.app:8446
+##div.marge-dom[data-wgt-name*="体育"]
+##div.marge-dom[data-wgt-name*="美女"]
+##div.marge-dom[data-wgt-name*="老老二区"]
+##div.marge-dom[data-wgt-name*="正版图库"]
+##div.marge-dom[data-wgt-name*="底部属性"]
+##div.marge-dom[data-wgt-name*="最新域名"]
+##div.marge-dom[data-wgt-name*="廣告"]
+##div.marge-dom[data-wgt-name*="弹窗"]
+##div.marge-dom[data-wgt-name*="世界杯"]
+##div.marge-dom[data-wgt-name*="轮播"]
+##div.marge-dom[data-wgt-name*="七肖七码"]
+##div.marge-dom[data-wgt-name*="4901导航"]
+##div.marge-dom[data-wgt-name*="导航旗下"]
+##div.marge-dom[data-wgt-name*="好料引导官"]
+##div.marge-dom[data-wgt-name*="全部站点"]
+##div.marge-dom[data-wgt-name*="相信品牌的力量"]
+##div.marge-dom[data-wgt-name="公共-③码中特"]
+##div.marge-dom[data-wgt-name*="优秀站点"]
+##div.marge-dom[data-wgt-name*="广告"]
+##div.marge-dom[data-wgt-name*="二区专用"]
+##div.marge-dom[data-wgt-name*="高手榜二"]
+##div.marge-dom[data-wgt-name*="月份10码"]
+##div.marge-dom[data-wgt-name*="底部文字说明"]
+##div.marge-dom[data-wgt-name*="开奖器"]
+##div.marge-dom[data-wgt-name*="全年资料"]
+##div.marge-dom[data-wgt-name*="系统GI二区专用"]
+##div.marge-dom[data-wgt-name*="补链"]
+##div.marge-dom[data-wgt-name*="49模板图"]
+##.ad-img-banner-container
+##.float-group
+
+! 2026年7月13日 https://fjas.40185.com
+fjas.40185.com##[src="images/logo.jpg"]
+||fjas.40185.com/cj/zntg.js$script
+||fjas.40185.com/0149dh.js$script
+||fjas.40185.com/js/dingr.js$script
+||fjas.40185.com/js/dkzlw.js$script
+||fjas.40185.com/cj/247lxsm.js$script
+||fjas.40185.com/cj/wtgg.js$script
+||fjas.40185.com/cj/wl2.js$script
+||fjas.40185.com/js/fpbtg.js$script
+||js.szly123.com/js/4949.js$script
+||js.szly123.com/js/4949cp.js$script
+||b624a.junxuncm.com/js/lttt5.js$script
+||fjas.40185.com/js/tyym.js$script
+||fjas.40185.com/cj/wttptg.js$script
+||fjas.40185.com/cj/wl3.js$script
+||js.szly123.com/js/772.js$script
+||fjas.40185.com/cj/25bzcpjh.js$script
+||fjas.40185.com/cj/26gsq.js$script
+||fjas.40185.com/cj/31zzhl.js$script
+||fjas.40185.com/cj/35zwzl.js$script
+||fjas.40185.com/cj/41acwsq.js$script
+||fjas.40185.com/cj/61jnmb.js$script
+||fjas.40185.com/cj/65jxtxzl.js$script
+||fjas.40185.com/cj/73lhl.js$script
+||fjas.40185.com/cj/74zqtj.js$script
+||fjas.40185.com/cj/79qjjmt.js$script
+||js.szly123.com/49118/49.js$script
+||fjas.40185.com/cj/131jpmy.js$script
+||fjas.40185.com/cj/132zbxjs.js$script
+||fjas.40185.com/cj/146gsb2.js$script
+||fjas.40185.com/cj/162wlgs.js$script
+||fjas.40185.com/cj/183wtslm.js$script
+||fjas.40185.com/js/qnzl.js$script
+||fjas.40185.com/cj/193slzq.js$script
+||fjas.40185.com/cj/211sxym.js$script
+||fjas.40185.com/cj/89lbwb.js$script
+||fjas.40185.com/cj/000gazlw.js$script
+||fjas.40185.com/cj/69gsb.js$script
+||fjas.40185.com/cj/83yyptj.js$script
+||fjas.40185.com/cj/84dnmht.js$script
+||fjas.40185.com/cj/82mgxs.js$script
+||fjas.40185.com/cj/80dhsx.js$script
+||fjas.40185.com/cj/81jpgb.js$script
+||fjas.40185.com/cj/88pmzj.js$script
+||fjas.40185.com/cj/91smstm.js$script
+||fjas.40185.com/cj/112pmzq.js$script
+||fjas.40185.com/cj/121esbmzt.js$script
+||fjas.40185.com/cj/134ymccjt.js$script
+||fjas.40185.com/cj/212ybfsm.js$script
+||fjas.40185.com/cj/135yjxj.js$script
+||fjas.40185.com/cj/213qxqm.js$script
+||fjas.40185.com/cj/214hcac.js$script
+||fjas.40185.com/cj/215tqyb.js$script
+||fjas.40185.com/cj/216jplx.js$script
+||fjas.40185.com/cj/217ybzt.js$script
+||fjas.40185.com/cj/218emzwm.js$script
+||fjas.40185.com/cj/10amms.js$script
+||fjas.40185.com/cj/161jxzt.js$script
+||fjas.40185.com/js/cjwz.js$script
+||fjas.40185.com/cj/45sxzt.js$script
+||fjas.40185.com/cj/46sanxzt.js$script
+||fjas.40185.com/cj/50sxzm1.js$script
+||fjas.40185.com/cj/51sxzm2.js$script
+||fjas.40185.com/cj/52sxzm3.js$script
+||fjas.40185.com/cj/53sxzm4.js$script
+||fjas.40185.com/cj/54sxzm5.js$script
+||fjas.40185.com/cj/55sxzm6.js$script
+||fjas.40185.com/cj/56tjgs.js$script
+||fjas.40185.com/cj/58cmsj.js$script
+||fjas.40185.com/cj/59sgbm.js$script
+||fjas.40185.com/cj/60acxs.js$script
+||fjas.40185.com/cj/63sibux.js$script
+||fjas.40185.com/cj/64jsibux.js$script
+||fjas.40185.com/cj/66yybt.js$script
+||fjas.40185.com/cj/68tkcp.js$script
+||fjas.40185.com/cj/70dxxbm.js$script
+||fjas.40185.com/cj/75slsx.js$script
+||fjas.40185.com/cj/76esmzt.js$script
+||fjas.40185.com/cj/77ptsjk.js$script
+||fjas.40185.com/cj/78hbsx.js$script
+||fjas.40185.com/cj/86dsbh.js$script
+||fjas.40185.com/cj/87txwh.js$script
+||fjas.40185.com/cj/92smzt.js$script
+||fjas.40185.com/cj/93szxj.js$script
+||fjas.40185.com/cj/103dnxbm.js$script
+||fjas.40185.com/cj/104tuzhi.js$script
+||fjas.40185.com/cj/105mhczt.js$script
+||fjas.40185.com/cj/105mhcztj.js$script
+||fjas.40185.com/cj/24yxem.js$script
+||fjas.40185.com/js/jzrq.js$script
+||fjas.40185.com/cj/27xmbzh.js$script
+||fjas.40185.com/cj/28yxym.js$script
+||fjas.40185.com/cj/29wwsm.js$script
+||fjas.40185.com/cj/30bxslm.js$script
+||fjas.40185.com/cj/32AAAAA.js$script
+||fjas.40185.com/cj/33hstf.js$script
+||fjas.40185.com/cj/34csqy.js$script
+||fjas.40185.com/cj/37qxzt.js$script
+||fjas.40185.com/cj/42swmzt.js$script
+||fjas.40185.com/cj/43jmb.js$script
+||fjas.40185.com/cj/9sqtm.js$script
+||fjas.40185.com/cj/18sxssm.js$script
+||fjas.40185.com/cj/43jmb.js$script
+||fjas.40185.com/cj/245rtzt.js$script
+||fjas.40185.com/cj/244wzbx.js$script
+||fjas.40185.com/cj/248qhsxlm.js$script
+||fjas.40185.com/cj/243sljx.js$script
+||fjas.40185.com/cj/13wdgs.js$script
+||fjas.40185.com/cj/43jmb.js$script
+||fjas.40185.com/cj/17qhesm.js$script
+||fjas.40185.com/cj/19ssmzt.js$script
+||fjas.40185.com/cj/85wgbts.js$script
+||fjas.40185.com/cj/96hsdx.js$script
+||fjas.40185.com/cj/97dswx.js$script
+||fjas.40185.com/cj/222sdmnjc.js$script
+||fjas.40185.com/cj/223wzyt.js$script
+||fjas.40185.com/cj/224dsnm.js$script
+||fjas.40185.com/cj/225ssxzt.js$script
+||fjas.40185.com/cj/241jcts.js$script
+||fjas.40185.com/js/qnzhzl.js$script
+||fjas.40185.com/cj/242lxlmtj.js$script
+||fjas.40185.com/footer.js$script
+||fjas.40185.com/cj/206tu.js$script
+||fjas.40185.com/cj/205bctmb.js$script
+||fjas.40185.com/cj/201sxtj.js$script
+||fjas.40185.com/cj/198jssm.js$script
+||fjas.40185.com/cj/193slzq.js$script
+||fjas.40185.com/cj/194zwsl.js$script
+||fjas.40185.com/cj/187ktzsx.js$script
+||fjas.40185.com/cj/176tutu.js$script
+||fjas.40185.com/cj/99dsgs.js$script
+||fjas.40185.com/cj/110jxlx.js$script
+||fjas.40185.com/cj/122zynv.js$script
+||fjas.40185.com/cj/124amgzc.js$script
+||fjas.40185.com/cj/125rsm.js$script
+||fjas.40185.com/cj/128gpjx.js$script
+||fjas.40185.com/cj/129lbgp.js$script
+||fjas.40185.com/cj/133youmo.js$script
+||fjas.40185.com/cj/130pmjtt.js$script
+||fjas.40185.com/cj/136szmhs.js$script
+||fjas.40185.com/cj/137jzpcy.js$script
+||fjas.40185.com/cj/138sanzxj.js$script
+||fjas.40185.com/cj/139lmkz.js$script
+||fjas.40185.com/cj/140yjzy.js$script
+||fjas.40185.com/cj/141czrsm.js$script
+||fjas.40185.com/cj/143ytym.js$script
+||fjas.40185.com/cj/144sgbb.js$script
+||fjas.40185.com/cj/145tczsx.js$script
+||fjas.40185.com/cj/147jxtl.js$script
+||fjas.40185.com/cj/148xymy.js$script
+||fjas.40185.com/cj/151sbzt.js$script
+||fjas.40185.com/cj/154tmxj.js$script
+||fjas.40185.com/cj/157ssmbt.js$script
+||fjas.40185.com/cj/158jrxq.js$script
+||fjas.40185.com/cj/159hszt.js$script
+||fjas.40185.com/cj/160jyzt.js$script
+||fjas.40185.com/cj/164jhzx.js$script
+||fjas.40185.com/cj/165yyzt.js$script
+||fjas.40185.com/cj/166yyzt2.js$script
+||fjas.40185.com/cj/168tdsx.js$script
+||fjas.40185.com/cj/169zyzt.js$script
+||fjas.40185.com/cj/170djxs.js$script
+||fjas.40185.com/cj/172qqsh.js$script
+||fjas.40185.com/cj/173cxqd.js$script
+||fjas.40185.com/cj/174sgzt.js$script
+||fjas.40185.com/cj/175rccx.js$script
+||fjas.40185.com/cj/170djxs.js$script
+||fjas.40185.com/cj/170djxs.js$script
+##img[src*="/mygai/tp/"]
+fjas.40185.com##.jjtz
+fjas.40185.com##.header
+fjas.40185.com##.jpgb.fontb.table1
+fjas.40185.com##.jrrm > tbody > tr > td
+fjas.40185.com##.jrtj
+fjas.40185.com##.tfoot
+fjas.40185.com##.bzsxbm.fontb.table1 > tfoot
+fjas.40185.com##.lzhl.fontb.table1 > tfoot
+||fjas.40185.com/images/tu/lxlm*.jpg$image
+
+! 2026年7月16日 https://2mh33.jnxjkj1.com:8443
+##.gsdh
+2mh33.jnxjkj1.com##div.white-box:nth-of-type(1)
+##.jjtz
+
+! 2026年7月16日 https://6677aa.www86563a.com:8443
+6677aa.www86563a.com##[src="/img/toplogo.gif"]
+
+! 2026年7月16日 https://4818aa.www73136c.com:8443
+4818aa.www73136c.com##[src="/images/logo.png"]
+||zz336.www76891b.com:8443/js/top.js$script
+||js.szly123.com/fivetab.js$script
+
+! 2026年7月16日 https://l155987234bgftyu.www39821a.com:8443
+||js.szly123.com/js/gg.js$script
+||dasanba581.www98192b.com:8443/dingbu.js$script
+||22.93770.com/dingbu.js$script
+||dasanba581.www98192b.com:8443/dingbu01.js$script
+||dasanba581.www98192b.com:8443/kjs.js$script
+||l155987234bgftyu.www39821a.com:8443/cj/035hblx.js$script
+||l155987234bgftyu.www39821a.com:8443/djck.js$script
+||l155987234bgftyu.www39821a.com:8443/djck.js$script
+||l155987234bgftyu.www39821a.com:8443/djck.js$script
+||l155987234bgftyu.www39821a.com:8443/djck.js$script
+||l155987234bgftyu.www39821a.com:8443/djck.js$script
+||l155987234bgftyu.www39821a.com:8443/djck.js$script
+||l155987234bgftyu.www39821a.com:8443/djck.js$script
+||l155987234bgftyu.www39821a.com:8443/djck.js$script
+||l155987234bgftyu.www39821a.com:8443/djck.js$script
+l155987234bgftyu.www39821a.com##div.news-box.box:nth-of-type(4)
+l155987234bgftyu.www39821a.com##div#yxym.pad.box:nth-of-type(6)
+l155987234bgftyu.www39821a.com##div.xjct.pad.box:nth-of-type(9)
+l155987234bgftyu.www39821a.com##div#yxym.pad.box:nth-of-type(11)
+l155987234bgftyu.www39821a.com##div#yxym.pad.box:nth-of-type(13)
+l155987234bgftyu.www39821a.com##div#yxym.pad.box:nth-of-type(14)
+l155987234bgftyu.www39821a.com##div:nth-of-type(17)
+l155987234bgftyu.www39821a.com##div:nth-of-type(18)
+l155987234bgftyu.www39821a.com##.down1555
+l155987234bgftyu.www39821a.com##div:nth-of-type(25)
+l155987234bgftyu.www39821a.com##div#yxym.pad.box:nth-of-type(26)
+l155987234bgftyu.www39821a.com##div#yxym.pad.box:nth-of-type(28)
+l155987234bgftyu.www39821a.com##div#yxym.pad.box:nth-of-type(30)
+l155987234bgftyu.www39821a.com##div#yxym.pad.box:nth-of-type(31)
+l155987234bgftyu.www39821a.com##div#yxym.pad.box:nth-of-type(32)
+l155987234bgftyu.www39821a.com##div#yxym.pad.box:nth-of-type(33)
+l155987234bgftyu.www39821a.com##div#yxym.pad.box:nth-of-type(36)
+l155987234bgftyu.www39821a.com##div.xjct.pad.box:nth-of-type(41)
+l155987234bgftyu.www39821a.com##div#yxym.pad.box:nth-of-type(42)
+l155987234bgftyu.www39821a.com##div#yxym.pad.box:nth-of-type(44)
+l155987234bgftyu.www39821a.com##div#yxym.pad.box:nth-of-type(47)
+l155987234bgftyu.www39821a.com###tabzzhla
+l155987234bgftyu.www39821a.com##div#yxym.pad.box:nth-of-type(51)
+l155987234bgftyu.www39821a.com##div.xjct.pad.box:nth-of-type(52)
+l155987234bgftyu.www39821a.com##[src="https://js.szly123.com/118/djhl.jpg"]
+l155987234bgftyu.www39821a.com##div#yxym.pad.box:nth-of-type(60)
+l155987234bgftyu.www39821a.com##div.xjct.pad.box:nth-of-type(61)
+l155987234bgftyu.www39821a.com##div#yxym.pad.box:nth-of-type(62)
+l155987234bgftyu.www39821a.com##body > font > font > font > div.xjct.pad.box
+l155987234bgftyu.www39821a.com##body > font > font > font > div#yxym.pad.box
+l155987234bgftyu.www39821a.com##div.xjct.pad.box:nth-of-type(29)
+l155987234bgftyu.www39821a.com##div.news-box.box:nth-of-type(5)
+l155987234bgftyu.www39821a.com##div.news-box.box:nth-of-type(37)
+l155987234bgftyu.www39821a.com##div.news-box.box:nth-of-type(40)
+l155987234bgftyu.www39821a.com##div#yxym.pad.box:nth-of-type(2)
+l155987234bgftyu.www39821a.com##.nav2
+
+! 2026年7月16日 https://z7x5rd.www18371b.com:8443
+z7x5rd.www18371b.com##.toplogo
+z7x5rd.www18371b.com##.nav2 > ul > li
+z7x5rd.www18371b.com##.gfkjw
+z7x5rd.www18371b.com##b > table
+z7x5rd.www18371b.com##.post-list
+z7x5rd.www18371b.com###\#jsss
+z7x5rd.www18371b.com##div.slhz > table > tbody > tr
+z7x5rd.www18371b.com##.zyzt
+z7x5rd.www18371b.com##.sizt
+z7x5rd.www18371b.com##.zhjs
+z7x5rd.www18371b.com##.stzt
+z7x5rd.www18371b.com##div.box > .box > div.box
+z7x5rd.www18371b.com###tabzzhla
+z7x5rd.www18371b.com##[src="https://js.szly123.com/118/djhl.jpg"]
+z7x5rd.www18371b.com##div.box:nth-of-type(24)
+z7x5rd.www18371b.com##div.box:nth-of-type(31)
+z7x5rd.www18371b.com##div.down1555:nth-of-type(33)
+z7x5rd.www18371b.com##.shzt
+||www.lhbd123.com/tuku/sblht122.jpg$image
+z7x5rd.www18371b.com###ggsb
+z7x5rd.www18371b.com##.gsb
+z7x5rd.www18371b.com##div.box > .box > div.h10
+z7x5rd.www18371b.com##[src="https://www.lhbd123.com/tuku/sblht122.jpg"]
+z7x5rd.www18371b.com##.jgtns
+z7x5rd.www18371b.com##.lxzt
+z7x5rd.www18371b.com###lxzt
+z7x5rd.www18371b.com##.aomen-app
+z7x5rd.www18371b.com##.qqsh
+z7x5rd.www18371b.com##.gptup
+z7x5rd.www18371b.com##.jyzt
+z7x5rd.www18371b.com##.shlm
+z7x5rd.www18371b.com##.mmhcztup
+z7x5rd.www18371b.com##div.down1555:nth-of-type(41)
+z7x5rd.www18371b.com##.dssx
+z7x5rd.www18371b.com##.hong
+z7x5rd.www18371b.com##.hszt
+z7x5rd.www18371b.com##.jxzt
+z7x5rd.www18371b.com###mts
+z7x5rd.www18371b.com##.mts
+z7x5rd.www18371b.com##div:nth-of-type(58)
+z7x5rd.www18371b.com##.mszt
+z7x5rd.www18371b.com##div#sjmt:nth-of-type(66)
+z7x5rd.www18371b.com##.sjmt
+z7x5rd.www18371b.com##.nnzt
+z7x5rd.www18371b.com##.dssw
+z7x5rd.www18371b.com##.cxqd
+z7x5rd.www18371b.com##.jsha
+z7x5rd.www18371b.com###jinghsa
+z7x5rd.www18371b.com##div#sbx:nth-of-type(80)
+z7x5rd.www18371b.com##.sbx
+z7x5rd.www18371b.com##div.h10:nth-of-type(73)
+z7x5rd.www18371b.com##div.h10:nth-of-type(69)
+z7x5rd.www18371b.com##div.h10:nth-of-type(71)
+z7x5rd.www18371b.com##div.h10:nth-of-type(77)
+z7x5rd.www18371b.com##div.h10:nth-of-type(81)
+z7x5rd.www18371b.com##div.h10:nth-of-type(67)
+z7x5rd.www18371b.com##div.h10:nth-of-type(63)
+z7x5rd.www18371b.com##.qhzt
+z7x5rd.www18371b.com##.tdzt
+z7x5rd.www18371b.com##.gsgl
+z7x5rd.www18371b.com##.ssm
+z7x5rd.www18371b.com##.jmxc
+z7x5rd.www18371b.com##div.h10:nth-of-type(92)
+z7x5rd.www18371b.com##div.h10:nth-of-type(94)
+z7x5rd.www18371b.com###gsgl
+z7x5rd.www18371b.com##div.h10:nth-of-type(85)
+z7x5rd.www18371b.com##div.h10:nth-of-type(87)
+z7x5rd.www18371b.com##div.h10:nth-of-type(90)
+z7x5rd.www18371b.com##div.h10:nth-of-type(2)
+z7x5rd.www18371b.com###tabzzhl49
+z7x5rd.www18371b.com##div.h10:nth-of-type(4)
+z7x5rd.www18371b.com##[src="https://xin2.xn--939aqqg8l4s6a.xn--mk1bu44c:8443/images/djhl.jpg"]
+z7x5rd.www18371b.com##.rmct
+z7x5rd.www18371b.com##.jxdx
+z7x5rd.www18371b.com##div.h10:nth-of-type(6)
+z7x5rd.www18371b.com###zuil
+||abc456.23982.com/images/txtm.gif$image
+z7x5rd.www18371b.com##div.h10:nth-of-type(83)
+z7x5rd.www18371b.com##div.h10:nth-of-type(61)
+z7x5rd.www18371b.com##div.h10:nth-of-type(57)
+z7x5rd.www18371b.com##div.h10:nth-of-type(59)
+z7x5rd.www18371b.com##div.h10:nth-of-type(54)
+z7x5rd.www18371b.com##b > p
+z7x5rd.www18371b.com##b > div > table > tbody > tr > td
+z7x5rd.www18371b.com##.waibox
+z7x5rd.www18371b.com###con_jsyt_1 > .dd2 > table > tbody > tr > td > p > strong > [href="https://ag0123.xn--ldc8aixv6ebp7ipa8eb2c0a.xn--gecrj9c:8443/"]
+z7x5rd.www18371b.com###con_jzbs_1 > .dd2 > table > tbody > tr > td > p > strong > [href="https://ag0123.xn--ldc8aixv6ebp7ipa8eb2c0a.xn--gecrj9c:8443/"]
+z7x5rd.www18371b.com###con_jsyw_1 > .dd2 > table > tbody > tr > td > p > strong > [href="https://ag0123.xn--ldc8aixv6ebp7ipa8eb2c0a.xn--gecrj9c:8443/"]
+z7x5rd.www18371b.com###con_jsyx_1 > .dd2 > table > tbody > tr > td > p > strong > [href="https://ag0123.xn--ldc8aixv6ebp7ipa8eb2c0a.xn--gecrj9c:8443/"]
+z7x5rd.www18371b.com###con_ptyw_1 > .dd2 > table > tbody > tr > td > p > strong > [href="https://ag0123.xn--ldc8aixv6ebp7ipa8eb2c0a.xn--gecrj9c:8443/"]
+z7x5rd.www18371b.com###con_jssx_1 > .dd2 > table > tbody > tr > td > p > strong > [href="https://ag0123.xn--ldc8aixv6ebp7ipa8eb2c0a.xn--gecrj9c:8443/"]
+z7x5rd.www18371b.com###con_fslx_1 > .dd2 > table > tbody > tr > td > p > strong > [href="https://ag0123.xn--ldc8aixv6ebp7ipa8eb2c0a.xn--gecrj9c:8443/"]
+z7x5rd.www18371b.com###con_jxtm_1 > .jxtm1 > table > tbody > tr > td > p > strong > [href="https://ag0123.xn--ldc8aixv6ebp7ipa8eb2c0a.xn--gecrj9c:8443/"]
+z7x5rd.www18371b.com##b > div.box > .box > table > tbody > tr > td > p
+z7x5rd.www18371b.com##b > div.box > .box > table > tbody > tr > td
+z7x5rd.www18371b.com###con_ptzt_1 > .dd2 > table > tbody > tr > td > p > strong > [href="https://ag0123.xn--ldc8aixv6ebp7ipa8eb2c0a.xn--gecrj9c:8443/"]
+z7x5rd.www18371b.com###con_wszt_1 > .dd2 > table > tbody > tr > td > p > strong > [href="https://ag0123.xn--ldc8aixv6ebp7ipa8eb2c0a.xn--gecrj9c:8443/"]
+!屏蔽被顶起来的评论
+ds.100bmz.com##.pl-top-comments
+ds.100bmz.com##.hbl-comm
+ds.100bmz.com##.hbl-head
+15.164.127.25##.pl-top-comments
+15.164.127.25##.hbl-comm
+15.164.127.25##.hbl-head
+
