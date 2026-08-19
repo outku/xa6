@@ -14,7 +14,15 @@
 
 !屏蔽||js.szly123.com域名下的所有脚本加载
 !||js.szly123.com^$script
-!||js.szly123.com^
+||js.szly123.com^
+
+!屏蔽被顶起来的评论
+ds.100bmz.com##.pl-top-comments
+ds.100bmz.com##.hbl-comm
+ds.100bmz.com##.hbl-head
+15.164.127.25##.pl-top-comments
+15.164.127.25##.hbl-comm
+15.164.127.25##.hbl-head
 
 ! 2026年7月8日 https://x35.xn--hdcl2bk2m1bc.xn--gecrj9c
 ! 2026年7月8日 https://x35.xn--hdcl2bk2m1bc.xn--gecrj9c:8443
@@ -425,11 +433,3 @@ z7x5rd.www18371b.com##b > div.box > .box > table > tbody > tr > td > p
 z7x5rd.www18371b.com##b > div.box > .box > table > tbody > tr > td
 z7x5rd.www18371b.com###con_ptzt_1 > .dd2 > table > tbody > tr > td > p > strong > [href="https://ag0123.xn--ldc8aixv6ebp7ipa8eb2c0a.xn--gecrj9c:8443/"]
 z7x5rd.www18371b.com###con_wszt_1 > .dd2 > table > tbody > tr > td > p > strong > [href="https://ag0123.xn--ldc8aixv6ebp7ipa8eb2c0a.xn--gecrj9c:8443/"]
-!屏蔽被顶起来的评论
-ds.100bmz.com##.pl-top-comments
-ds.100bmz.com##.hbl-comm
-ds.100bmz.com##.hbl-head
-15.164.127.25##.pl-top-comments
-15.164.127.25##.hbl-comm
-15.164.127.25##.hbl-head
-
