@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
 ! Title:我的xa6个人广告过滤
 ! Description:自建ABP规则，Alook浏览器使用
-! Version:2026082001
+! Version:2026082002
 ! Expires:1 days
 ! Homepage:https://github.com/outku/xa6-ad
 !========下面为广告拦截规则========
