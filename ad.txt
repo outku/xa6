@@ -1,0 +1,18 @@
+[Adblock Plus 2.0]
+! Title:我的个人广告过滤
+! Description:自建ABP规则，Alook浏览器使用
+! Version:2026082001
+! Expires:1 days
+! Homepage:https://github.com/outku/xa6-ad
+!========下面写你的广告拦截规则========
+
+!示例：屏蔽某个网站全部广告
+||example.com^
+
+!示例：隐藏网页广告区块
+example.com##div.ad
+
+!示例：放行网站（不拦截）
+@@||example.com/noad.js^
+
+!感叹号开头是注释，不会生效
