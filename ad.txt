@@ -1,28 +1,26 @@
 [Adblock Plus 2.0]
 ! Title:我的xa6个人广告过滤
 ! Description:自建ABP规则，Alook浏览器使用
-! Version:2026082004
+! Version:2026082005
 ! Expires:1 days
 ! Homepage:https://github.com/outku/xa6-ad
 !========下面为广告拦截规则========
 
 !屏蔽黑产CDNS控制访问次数后恶意跳转
-||js.h3cdns.com^$script
 ||js.h3cdns.com^
 ||hm.baidu.com^
 !$script：仅拦截 JS 脚本；third-party：只拦截第三方网站嵌入的百度统计（不影响你自己本地打开百度主页）
-||hm.baidu.com$script,third-party
+!||hm.baidu.com$script,third-party
 
-!屏蔽||js.szly123.com域名下的所有脚本加载
-||js.szly123.com^$script
 ||js.szly123.com^
+!屏蔽||js.szly123.com域名下的所有脚本加载
+!||js.szly123.com^$script
 
 ! 强制拦截黑产CDN，important提高优先级，拦截脚本、iframe、子框架
 ||js.h3cdns.com^$important,script,subdocument,third-party
 ||js.szly123.com^$important,script,subdocument,third-party
 ! 额外兜底：禁止加载这两个域名任意资源
 *$domain=js.h3cdns.com|js.szly123.com
-
 
 !屏蔽被顶起来的评论
 ds.100bmz.com##.pl-top-comments
